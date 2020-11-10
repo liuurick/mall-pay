@@ -3,9 +3,6 @@ package com.liuurick.pay.enums;
 import com.lly835.bestpay.enums.BestPayTypeEnum;
 import lombok.Getter;
 
-/**
- * Created by 廖师兄
- */
 @Getter
 public enum PayPlatformEnum {
 
