@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 /**
  *
  */
-@Component
+@Configuration
 public class BestPayConfig {
 
 	@Autowired
