@@ -1,3 +1,53 @@
 spring:
+<<<<<<< HEAD
   profiles:
     active: dev
+=======
+<<<<<<< HEAD
+  profiles:
+    active: dev
+=======
+<<<<<<< HEAD
+  profiles:
+    active: dev
+=======
+<<<<<<< HEAD
+  profiles:
+    active: dev
+=======
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/mall?serverTimezone=UTC&characterEncoding=utf-8&useSSL=false
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mappers/*.xml
+
+logging:
+  pattern:
+    console: "[%thread] %-5level %logger{36} - %msg%n"
+
+wxpay:
+  appId: xxxxx
+  mchId: xxxxx
+  mchKey: xxxxx621D373CADE4E832627B4F6
+  notifyUrl: xxxxx
+  returnUrl: http://127.0.0.1
+
+#沙箱环境
+alipay:
+  appId: xxxxxxx
+  #应用私钥
+  privateKey: "xxxxxvJMdC9sxxEfP0Oc5Ps0gW9sT7YjXIbUo3qm2gkhj7+G6BSRpEcU5ohPfhFWmLQPMyIOF4jupxOQXk28SQ2Ari4iZ3BpM/Qr9w5CWlCAG9zGWMzVFCG76tXausNtpAZjo6vFVFjmjCDQTwicuuj6badc4vh0mBfSkMXUNWjDD8rKgfySmNh0PA2J2CWmfH7bWT3GAH0iuxzx5VN5dMZBdfVj314DCjv85KsxYSoZriQGQXvlAwElxxuQabs4QytkpMHYndJU1kR+JdL1DzYIiGY4a9EhcALhlU9AgMBAAECggEABP8KGu/tc4+csPMRuv5RSiR5AqMovxPVAFs3c/MNb8Bj9nfQv2rFK0BaqQ2BqkhE7Qg+BDaJYZW42fPA73OaSWTxYUV+wnW4uvWTH08uk3GklODnO8jHBOI/O6Kyj+ylsJz6qijfmdN/oMn5GFnW/c73Wvve0SMNggOfF2r3Ae0jRK0+DxK5WkhofN3vwv8qT4J8hxV1n/x0+/YDaznhxM2TEJl2qYa/q/2Q8AKwC9yXZgszOSAmV+vKVn7WDXdfP89+Kek5Z/5/+q6kcoWwtdhqKqnnyMref+2u+vc/rsECXRqByYFqrZYgLXfRu6fvI3OzsalpA54OZ6cPb8j+IQKBgQDRwQrseKrjy81uRAkJ2NcNlEnWbLMG93ax3C7cETi1dlwaurdHoI3yrpa9ehHBDqsOH1o3UEA4pF5LBDgec1P/VV+3cg1P6K9Gq8GQTyWT2rfyd0SG4Ng723SUwC5MVInBH5WBDPaa8hMXXJBZ6bvomrMli/At00lfL0XOsK7ImQKBgQCyzmMqLa+AnwqiQulj8/Vt0cNdp7HZ+kfhMLTiM5M29P1zTJwRMyrkupGF4dVmEjjxJb3PBQx5oWZp0dXkTX09aM3QWi8ELXzo45Ytvf84t5RiiKKLLQ8o09gd9xFX8jyjPY97IcnhD2BaloMsk18RfzUeeNq1dUscAAGfPxLkRQKBgQC64GewGS3/uDL1263F1Sh8k7JZVQ0H1vAsNISXUsyYd7RFqDbknPn6zmvEsn4g58Wk1nAVOe2NyXutEDxDfPLIWTLnCLktiZyntRzGSo2rNkGOx44JMUfVxIcQhEx7exIkOtSDXp5Tm/tAZBrD0Me2zCVx/URmP4luQXrLVITUeQKBgA+I+vipK3xjVQswARMcGRDHjs/OSBeGNUSNdMnKbVnzAypHV6/u4CUrSIV3T5EkuCnLe6hG6gSPT1SWVJ0XVnBFcMxPaZJVWWrqixvCTDBjUtMUx/qLmauUbEx+MNWRSE9ug87Q6rdRHLACL7dpvnLIuJbDLU1iuXnfTkTFuCB5AoGAU110+H+PWy4Z3nGP1mBcVje9Evlm+ERMrYfVF7mFKZm05aJ/IuSksr5AUN4+aTlyl//iIsccprP4Q4h9FjVoqxPFVtNHyB7IdK0iRsyJifY/6DWRmtS0iRPl3d2+G7PG5QZN5w5kxspEaxJ5jYsmkgEmo7BMLN6BrPuuwohtkZY="
+  publicKey: "xxxxx9Cw6bHfPWU8UVwUGM82HnEqDOizVlDthjpk/P8Nu20WNBuK3mg1aKwqsA0qtlAOhjLXj5dHhCQh+OEBfMWBG3Ubs1EI43upS9CWyV8IY1YdFQLdsIfGvCO1gKxsvf+eGMnjiNbKeKeYm51UZ0vr18PDckE4xMaWQx4Ek6bmZcAJYcCsjLI/V89gfi50b3zQzy0KGC7kcSXI/oAfo6RpxLvzR/OGoMjLm6I0O0e+LLsr87LClQ3YT+dEvFBeRMTSHdLi8lSiZKbrcaFQLDXWLfk6TcYm97mAoWeg9N3whdWXt/o2bku+m2/GIjOwIDAQAB"
+  notifyUrl: xxxxx
+  returnUrl: http://127.0.0.1
+  gatewayUrl: https://openapi.alipaydev.com/gateway.do
+
+>>>>>>> 7440304... 支付宝/微信支付功能的完善
+>>>>>>> 51d3253... 支付宝/微信支付功能的完善
+>>>>>>> 1700935... 支付宝/微信支付功能的完善
+>>>>>>> 2689716... 支付宝/微信支付功能的完善
