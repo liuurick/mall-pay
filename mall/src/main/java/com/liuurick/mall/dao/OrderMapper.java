@@ -4,7 +4,11 @@ import com.liuurick.mall.pojo.Order;
 
 import java.util.List;
 
+/**
+ * @author liubin
+ */
 public interface OrderMapper {
+
     int deleteByPrimaryKey(Integer id);
 
     int insert(Order record);

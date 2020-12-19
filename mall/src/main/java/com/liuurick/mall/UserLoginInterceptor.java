@@ -10,11 +10,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
+/**
+ * @author liubin
+ */
 @Slf4j
 public class UserLoginInterceptor implements HandlerInterceptor {
 
 	/**
-	 * true 表示继续流程，false表示中断
+	 * true表示继续流程，false表示中断
 	 * @param request
 	 * @param response
 	 * @param handler
@@ -28,10 +31,6 @@ public class UserLoginInterceptor implements HandlerInterceptor {
 		if (user == null) {
 			log.info("user=null");
 			throw new UserLoginException();
-
-//			response.getWriter().print("error");
-//			return false;
-//			return ResponseVo.error(ResponseEnum.NEED_LOGIN);
 		}
 		return true;
 	}

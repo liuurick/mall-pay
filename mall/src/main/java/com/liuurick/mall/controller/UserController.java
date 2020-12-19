@@ -48,7 +48,11 @@ public class UserController {
         return userResponseVo;
     }
 
-    //session保存在内存里，改进版：token+redis
+    /**
+     * session保存在内存里，改进版：token+redis
+     * @param session
+     * @return
+     */
     @GetMapping("/user")
     public ResponseVo<User> userInfo(HttpSession session) {
         log.info("/user sessionId={}", session.getId());

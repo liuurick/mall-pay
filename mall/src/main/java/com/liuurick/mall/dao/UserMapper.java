@@ -2,7 +2,11 @@ package com.liuurick.mall.dao;
 
 import com.liuurick.mall.pojo.User;
 
+/**
+ * @author liubin
+ */
 public interface UserMapper {
+
     int insert(User record);
 
     int insertSelective(User record);

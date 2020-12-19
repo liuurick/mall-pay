@@ -8,6 +8,9 @@ import java.util.Date;
 import java.util.List;
 
 
+/**
+ * @author liubin
+ */
 @Data
 public class OrderVo {
 

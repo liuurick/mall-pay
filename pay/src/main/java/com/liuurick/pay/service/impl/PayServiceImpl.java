@@ -1,5 +1,6 @@
 package com.liuurick.pay.service.impl;
 
+import com.google.gson.Gson;
 import com.liuurick.pay.dao.PayInfoMapper;
 import com.liuurick.pay.enums.PayPlatformEnum;
 import com.liuurick.pay.pojo.PayInfo;
@@ -11,6 +12,7 @@ import com.lly835.bestpay.model.PayRequest;
 import com.lly835.bestpay.model.PayResponse;
 import com.lly835.bestpay.service.BestPayService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,6 +30,11 @@ public class PayServiceImpl implements PayService {
 
     @Autowired
     private PayInfoMapper payInfoMapper;
+
+    @Autowired
+    private AmqpTemplate amqpTemplate;
+
+    private final static String QUEUE_PAY_NOTIFY = "payNotify";
 
     @Override
     public PayResponse create(String orderId, BigDecimal amount, BestPayTypeEnum bestPayTypeEnum) {
@@ -87,8 +94,7 @@ public class PayServiceImpl implements PayService {
         }
 
         //TODO pay发送MQ消息，mall接受MQ消息
-
-
+        amqpTemplate.convertAndSend(QUEUE_PAY_NOTIFY, new Gson().toJson(payInfo));
 
 
         /**

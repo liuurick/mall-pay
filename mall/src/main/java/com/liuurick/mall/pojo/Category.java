@@ -4,6 +4,9 @@ import lombok.Data;
 
 import java.util.Date;
 
+/**
+ * @author liubin
+ */
 @Data
 public class Category {
     private Integer id;

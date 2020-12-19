@@ -5,8 +5,12 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * @author liubin
+ */
 @Data
 public class Product {
+
     private Integer id;
 
     private Integer categoryId;

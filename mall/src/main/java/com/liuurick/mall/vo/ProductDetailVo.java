@@ -6,6 +6,9 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 
+/**
+ * @author liubin
+ */
 @Data
 public class ProductDetailVo {
 

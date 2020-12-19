@@ -1,5 +1,7 @@
 package com.liuurick.mall.listener;
 
+import com.google.gson.Gson;
+import com.liuurick.mall.pojo.PayInfo;
 import com.liuurick.mall.service.IOrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
@@ -22,10 +24,10 @@ public class PayMsgListener {
     public void process(String msg) {
         log.info("【接收到消息】=> {}", msg);
 
-//        PayInfo payInfo = new Gson().fromJson(msg, PayInfo.class);
-//        if (payInfo.getPlatformStatus().equals("SUCCESS")) {
-//            //修改订单里的状态
-//            orderService.paid(payInfo.getOrderNo());
-//        }
+        PayInfo payInfo = new Gson().fromJson(msg, PayInfo.class);
+        if (payInfo.getPlatformStatus().equals("SUCCESS")) {
+            //修改订单里的状态
+            orderService.paid(payInfo.getOrderNo());
+        }
     }
 }

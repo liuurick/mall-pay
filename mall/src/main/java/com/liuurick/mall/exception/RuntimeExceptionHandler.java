@@ -12,13 +12,15 @@ import java.util.Objects;
 
 import static com.liuurick.mall.enums.ResponseEnum.ERROR;
 
-
+/**
+ * @author liubin
+ */
 @ControllerAdvice
 public class RuntimeExceptionHandler {
 
 	@ExceptionHandler(RuntimeException.class)
 	@ResponseBody
-//	@ResponseStatus(HttpStatus.FORBIDDEN)
+	//	@ResponseStatus(HttpStatus.FORBIDDEN)
 	public ResponseVo handle(RuntimeException e) {
 		return ResponseVo.error(ERROR, e.getMessage());
 	}

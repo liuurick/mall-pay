@@ -7,7 +7,6 @@ import org.springframework.validation.BindingResult;
 
 import java.util.Objects;
 
-
 @Data
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 public class ResponseVo<T> {

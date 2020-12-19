@@ -4,14 +4,9 @@ import lombok.Data;
 
 import java.util.Date;
 
-
 /**
- * @Author: liubin ON 2020/7/26 8:46
- * @param:
- * @return
- * @Description:收货信息
+ * @author liubin
  */
-
 @Data
 public class Shipping {
     private Integer id;

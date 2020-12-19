@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.liuurick.pay.dao.PayInfoMapper">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> 7440304... 支付宝/微信支付功能的完善
->>>>>>> 51d3253... 支付宝/微信支付功能的完善
->>>>>>> 1700935... 支付宝/微信支付功能的完善
->>>>>>> 2689716... 支付宝/微信支付功能的完善
   <resultMap id="BaseResultMap" type="com.liuurick.pay.pojo.PayInfo">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="user_id" jdbcType="INTEGER" property="userId" />
@@ -25,72 +13,24 @@
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
   </resultMap>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> 7440304... 支付宝/微信支付功能的完善
->>>>>>> 51d3253... 支付宝/微信支付功能的完善
->>>>>>> 1700935... 支付宝/微信支付功能的完善
->>>>>>> 2689716... 支付宝/微信支付功能的完善
   <sql id="Base_Column_List">
     id, user_id, order_no, pay_platform, platform_number, platform_status, pay_amount, 
     create_time, update_time
   </sql>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> 7440304... 支付宝/微信支付功能的完善
->>>>>>> 51d3253... 支付宝/微信支付功能的完善
->>>>>>> 1700935... 支付宝/微信支付功能的完善
->>>>>>> 2689716... 支付宝/微信支付功能的完善
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from mall_pay_info
     where id = #{id,jdbcType=INTEGER}
   </select>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> 7440304... 支付宝/微信支付功能的完善
->>>>>>> 51d3253... 支付宝/微信支付功能的完善
->>>>>>> 1700935... 支付宝/微信支付功能的完善
->>>>>>> 2689716... 支付宝/微信支付功能的完善
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from mall_pay_info
     where id = #{id,jdbcType=INTEGER}
   </delete>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> 7440304... 支付宝/微信支付功能的完善
->>>>>>> 51d3253... 支付宝/微信支付功能的完善
->>>>>>> 1700935... 支付宝/微信支付功能的完善
->>>>>>> 2689716... 支付宝/微信支付功能的完善
   <insert id="insert" parameterType="com.liuurick.pay.pojo.PayInfo">
     insert into mall_pay_info (id, user_id, order_no, 
       pay_platform, platform_number, platform_status, 
@@ -101,19 +41,7 @@
       #{payAmount,jdbcType=DECIMAL}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}
       )
   </insert>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> 7440304... 支付宝/微信支付功能的完善
->>>>>>> 51d3253... 支付宝/微信支付功能的完善
->>>>>>> 1700935... 支付宝/微信支付功能的完善
->>>>>>> 2689716... 支付宝/微信支付功能的完善
   <insert id="insertSelective" parameterType="com.liuurick.pay.pojo.PayInfo">
     insert into mall_pay_info
     <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -175,19 +103,7 @@
       </if>
     </trim>
   </insert>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> 7440304... 支付宝/微信支付功能的完善
->>>>>>> 51d3253... 支付宝/微信支付功能的完善
->>>>>>> 1700935... 支付宝/微信支付功能的完善
->>>>>>> 2689716... 支付宝/微信支付功能的完善
   <update id="updateByPrimaryKeySelective" parameterType="com.liuurick.pay.pojo.PayInfo">
     update mall_pay_info
     <set>
@@ -215,19 +131,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> 7440304... 支付宝/微信支付功能的完善
->>>>>>> 51d3253... 支付宝/微信支付功能的完善
->>>>>>> 1700935... 支付宝/微信支付功能的完善
->>>>>>> 2689716... 支付宝/微信支付功能的完善
   <update id="updateByPrimaryKey" parameterType="com.liuurick.pay.pojo.PayInfo">
     update mall_pay_info
     set user_id = #{userId,jdbcType=INTEGER},
@@ -240,19 +144,7 @@
       update_time = #{updateTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> 7440304... 支付宝/微信支付功能的完善
->>>>>>> 51d3253... 支付宝/微信支付功能的完善
->>>>>>> 1700935... 支付宝/微信支付功能的完善
->>>>>>> 2689716... 支付宝/微信支付功能的完善
   <select id="selectByOrderNo" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />

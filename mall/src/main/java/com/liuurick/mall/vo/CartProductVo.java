@@ -4,15 +4,14 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 
-
+/**
+ * @author liubin
+ */
 @Data
 public class CartProductVo {
 
 	private Integer productId;
 
-	/**
-	 * 购买的数量
-	 */
 	private Integer quantity;
 
 	private String productName;

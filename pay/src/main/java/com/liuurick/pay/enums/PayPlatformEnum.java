@@ -3,21 +3,9 @@ package com.liuurick.pay.enums;
 import com.lly835.bestpay.enums.BestPayTypeEnum;
 import lombok.Getter;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 /**
  * @author liubin
  */
->>>>>>> 7440304... 支付宝/微信支付功能的完善
->>>>>>> 51d3253... 支付宝/微信支付功能的完善
->>>>>>> 1700935... 支付宝/微信支付功能的完善
->>>>>>> 2689716... 支付宝/微信支付功能的完善
 @Getter
 public enum PayPlatformEnum {
 

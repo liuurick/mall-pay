@@ -2,13 +2,10 @@ package com.liuurick.mall.pojo;
 
 import lombok.Data;
 
-/**
- * @Author: liubin ON 2020/7/21 9:43
- * @param:
- * @return
- * @Description:
- */
 
+/**
+ * @author liubin
+ */
 @Data
 public class Cart {
 

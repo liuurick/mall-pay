@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * Created by liubin on 2020/7/21
+ * Created by liubin on 2020/11/19
  */
 public class CategoryMapperTest extends MallApplicationTests {
 
@@ -14,14 +14,15 @@ public class CategoryMapperTest extends MallApplicationTests {
     private CategoryMapper categoryMapper;
 
     @Test
-    public void findCategoryById() {
+    public void findCategoryByIdTest(){
         Category category = categoryMapper.findCategoryById(100001);
         System.out.println(category);
     }
 
     @Test
-    public void queryById() {
-        Category category =categoryMapper.queryById(100001);
+    public void queryCategoryByIdTest(){
+        Category category = categoryMapper.queryById(100001);
         System.out.println(category);
     }
+
 }

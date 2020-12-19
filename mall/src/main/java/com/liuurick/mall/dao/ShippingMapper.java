@@ -6,7 +6,11 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * @author liubin
+ */
 public interface ShippingMapper {
+
     int deleteByPrimaryKey(Integer id);
 
     int insert(Shipping record);

@@ -6,10 +6,13 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
+/**
+ * @author liubin
+ */
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class User {
+
     private Integer id;
 
     private String username;
@@ -30,4 +33,9 @@ public class User {
 
     private Date updateTime;
 
+    public User(String username, String password, String email) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+    }
 }

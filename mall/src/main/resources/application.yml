@@ -5,17 +5,17 @@ spring:
     password: 123456
     url: jdbc:mysql://127.0.0.1/mall?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
   redis:
-    host: 192.168.200.10
+    host: 192.168.60.129
     port: 6379
   rabbitmq:
-    addresses: 192.168.200.10
+    addresses: 192.168.60.129
     port: 5672
     username: guest
     password: guest
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
-    #控制台配置
+    #控制台打印sql语句
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   mapper-locations: classpath:mappers/*.xml
 
@@ -27,3 +27,4 @@ server:
   servlet:
     session:
       timeout: 120
+  port: 8081

@@ -6,6 +6,7 @@ import javax.validation.constraints.NotNull;
 
 /**
  * 添加商品
+ * @author liubin
  */
 @Data
 public class CartAddForm {
